@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Studio Desk — Ken Digital Studio</title>
+<meta name="description" content="Local booking and enquiry dashboard for Ken Digital Studio.">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">Ken Digital Studio <span class="frame-no">DESK</span></a>
+    <div class="nav-links nav-links-static">
+      <a href="index.html">View website</a>
+      <a href="book.html" class="nav-cta">New booking</a>
+    </div>
+  </nav>
+</header>
+<main>
+  <section class="admin-hero">
+    <div class="container">
+      <span class="hero-eyebrow">Private studio desk</span>
+      <h1>Requests, in one place.</h1>
+      <p class="lede">Bookings and enquiries submitted from this browser are stored locally in IndexedDB. Update a status as you work through the day.</p>
+    </div>
+  </section>
+  <section class="admin-section">
+    <div class="container admin-grid">
+      <div class="admin-panel">
+        <div class="admin-panel-head"><div><span class="kicker">Appointments</span><h2>Bookings</h2></div><span class="admin-badge">Local database</span></div>
+        <div id="admin-bookings" class="admin-records"><p class="empty-state">Loading bookings...</p></div>
+      </div>
+      <div class="admin-panel">
+        <div class="admin-panel-head"><div><span class="kicker">Inbox</span><h2>Enquiries</h2></div><span class="admin-badge">Local database</span></div>
+        <div id="admin-enquiries" class="admin-records"><p class="empty-state">Loading enquiries...</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="js/supabase-config.js"></script>
+<script src="js/supabase.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

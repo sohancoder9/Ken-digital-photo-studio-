@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book a Slot — Ken Digital Studio</title>
+<meta name="description" content="Request a booking at Ken Digital Studio, Malakpet, Hyderabad. We'll confirm your slot on WhatsApp.">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">Ken Digital Studio <span class="frame-no">MLKPT</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="book.html" class="nav-cta">Book a slot</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section style="padding-bottom:20px;">
+    <div class="container">
+      <span class="hero-eyebrow">Book a slot</span>
+      <h1 style="font-size:clamp(2rem,4vw,2.8rem); max-width:22ch;">Tell us what you need — we'll confirm on WhatsApp.</h1>
+      <p class="lede" style="max-width:60ch;">Book Ken Digital Studio for weddings, pre-wedding shoots, family functions, events and studio services anywhere in Hyderabad. Your request is saved on this device and sent to WhatsApp for confirmation.</p>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="container" style="max-width:640px;">
+      <form class="form-card" id="booking-form">
+
+        <div class="form-grid-2">
+          <div class="form-row">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-row">
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label for="service">Service</label>
+          <select id="service" name="service" required>
+            <option value="" disabled selected>Choose a service</option>
+            <option>Passport / visa photo</option>
+            <option>ID / document photo</option>
+            <option>Studio portrait</option>
+            <option>Family / baby photography</option>
+            <option>Wedding photography / videography</option>
+            <option>Pre-wedding photo / video shoot</option>
+            <option>Engagement / reception coverage</option>
+            <option>Birthday / function / event coverage</option>
+            <option>Bridal / groom portraits</option>
+            <option>Wedding invitation card design</option>
+            <option>Printing / framing</option>
+            <option>Photo album / photobook</option>
+            <option>Photo editing / restoration</option>
+            <option>Photo gifts / canvas / enlargements</option>
+            <option>Scanning / lamination / photocopy</option>
+            <option>Something else</option>
+          </select>
+        </div>
+
+        <div class="form-grid-2">
+          <div class="form-row">
+            <label for="date">Preferred date</label>
+            <input type="date" id="date" name="date" required>
+          </div>
+          <div class="form-row">
+            <label for="time">Preferred time</label>
+            <input type="time" id="time" name="time">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label for="notes">Anything we should know?</label>
+          <textarea id="notes" name="notes" placeholder="Number of people, photo size needed, event location, etc."></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Send request on WhatsApp</button>
+        </div>
+        <p class="form-note" id="booking-status" role="status"></p>
+        <p class="form-note form-note-strong">Your request is recorded locally before WhatsApp opens.</p>
+        <p class="form-note">Prefer to call instead? <a href="tel:+919963083437" style="color:var(--safelight-dim); font-weight:600;">+91 99630 83437</a> · <a href="mailto:kenstudio.malakpet@gmail.com" style="color:var(--safelight-dim); font-weight:600;">Email us</a></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="brand" style="margin-bottom:10px;">Ken Digital Studio</div>
+        <p>Passport photos, portraits and event photography in Malakpet, Hyderabad.</p>
+      </div>
+      <div>
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="book.html">Book a slot</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Studio</h5>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="tel:+919963083437">+91 99630 83437</a></li>
+          <li><a href="mailto:kenstudio.malakpet@gmail.com">kenstudio.malakpet@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Ken Digital Studio, Malakpet</span>
+      <span>Built for Ken Digital Studio</span>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="js/supabase-config.js"></script>
+<script src="js/supabase.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
